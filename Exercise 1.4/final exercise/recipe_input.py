@@ -21,7 +21,7 @@ def take_recipe():
 #user inserts recipe    
     name=str(input("insert name of the recipe: "))
     cooking_time=int(input("insert cooking time in minutes: "))
-    list_=input("Write the ingredients separated by commas")
+    list_=input("Write the ingredients separated by commas ")
     ingredients = list_.split(',')
     recipe = {'name': name, 'cooking_time': cooking_time, 'ingredients': ingredients}
 
