@@ -1,0 +1,13 @@
+#questo in mysql cli
+
+GRANT ALL PRIVILEGES ON * . * TO 'cf-python'@'localhost'
+    cursor.execute("CREATE DATABASE my_database")
+    cursor.execute("USE my_database")
+
+CREATE TABLE <table name> (
+    <column 1 name> <data type for column 1>,
+    <column 2 name> <data type for column 2>,
+    <column 3 name> <data type for column 3>,
+    ...
+    <column N name> <data type for column N>
+)
