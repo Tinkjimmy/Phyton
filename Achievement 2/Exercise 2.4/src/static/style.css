@@ -1,0 +1,26 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.log-container {
+    text-align: center;
+}
+
+.log {
+    display: inline-block;
+    
+}
+#logout{
+    float: right;
+    margin-right: 100px;
+}
+#login{
+    float: left;
+    margin-left: 100px;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,5 +1,8 @@
 {% load static %}
-
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="{% static 'sales/home.js'%}" defer></script>
+</head>
 <!DOCTYPE html>
 <html>
     <title>
@@ -7,15 +10,17 @@
     </title>
     <body>
         <br>
-        <h1 style="text-align:center">Welcome to our Bookstore</h1>
+        <h1>Welcome to our Bookstore</h1>
         <br>
         <br>
-        <a  href ="{%url 'login' %}" style="text-align:center"> Login </a>
+        
+        <div class="log-container">
+            <a class="log" id="login" href="{% url 'login' %}">Login</a>
+            <a class="log" id="logout" href="{% url 'logout' %}">Logout</a>
+        </div>
         <br>
+       
         <br>
-        <a href ="{%url 'logout' %}" style="text-align:center"> Logout </a>
-        <br>
-        <br>
-        <img  src="{% static 'sales/images/bookstore.jpg' %}" alt="home" width="600" height="300">
+        <img class="center-image" src="{% static 'sales/images/bookstore.jpg' %}" alt="home" width="600" height="300">
     </body>
 </html>
